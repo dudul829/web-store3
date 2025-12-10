@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AA Lighting Garage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #eaeaea;
+    }
+
+    /* Header */
+    header {
+      background-color: #111;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ff0000;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #ff0000;
+      margin-left: 10px;
+    }
+
+    nav a {
+      color: #eaeaea;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(180deg, #111, #0a0a0a);
+    }
+
+    .hero h2 {
+      color: #ff0000;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    /* Product Grid */
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #111;
+      text-align: center;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #ff0000;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      color: #fff;
+    }
+
+    .product-card p {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .price {
+      color: #ff0000;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .btn-detail {
+      display: inline-block;
+      background-color: #ff0000;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-detail:hover {
+      background-color: #cc0000;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      border-top: 1px solid #222;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 8px;
+      }
+
+      header img {
+        width: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="logo AA Lighting.jpg" alt="Logo AA Lighting Garage">
+      <h1>AA LIGHTING GARAGE</h1>
+    </div>
+    <nav>
+      <!-- <a href="#">Beranda</a> -->
+      <!-- <a href="#halaman produk">Produk</a> -->
+      <a href="https://wa.me/6288212703748">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Variasi Stoplamp Motor</h2>
+    <p>Desain keren, cahaya tajam, dan tampilan racing modern untuk motor kamu!</p>
+  </section>
+
+  <section class="product-container" id="produk">
+    <div class="product-card">
+      <!-- <img src="produk1.jpg" alt="Stoplamp Lazy Beat"> -->
+      <h3>Stoplamp Lazy Beat</h3>
+      <p>Untuk semua generasi Honda Beat</p>
+      <div class="price">Rp 300.000</div>
+      <a href="produk-beat.html" class="btn-detail">Lihat Detail</a>
+    </div>
+
+    <div class="product-card">
+      <!-- <img src="produk2.jpg" alt="Stoplamp Lazy Mio Smile"> -->
+      <h3>Stoplamp Lazy Mio Smile</h3>
+      <p>Desain modern dan elegan</p>
+      <div class="price">Rp 300.000</div>
+      <a href="produk-mio.html" class="btn-detail">Lihat Detail</a>
+    </div>
+
+    <div class="product-card">
+      <!-- <img src="produk3.jpg" alt="Stoplamp Lazy Vario"> -->
+      <h3>Stoplamp Lazy Vario</h3>
+      <p>Untuk semua generasi Vario</p>
+      <div class="price">Rp 300.000</div>
+      <a href="produk-vario.html" class="btn-detail">Lihat Detail</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 AA Lighting Garage | WhatsApp: 088212703748
+  </footer>
+ <script src="main.js"></script>
+</body>
+</html>
